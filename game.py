@@ -30,7 +30,7 @@ while count <= 4:
         else:
             print("一文字のみ有効です。")
 
-    str_count = 0       
+    str_count = 0
 
     for i in selected_word:
         if predicted_alphabet == i:
@@ -51,7 +51,7 @@ while count <= 4:
     print(" ".join(selected_word_list))
 
     if not "_" in selected_word_list:
-        win == True
+        win = True
         print("正解です。おめでとうございます。")
         break
 
