@@ -46,9 +46,8 @@ while count <= 4 and "_" in selected_word_list:
     print(" ".join(selected_word_list))
 
     if not "_" in selected_word_list:
-        win = True
-
-if win:
-    print("正解です。おめでとうございます。")
-else:
-    print("正解は",selected_word,"でした。残念。")
+        print("正解です。おめでとうございます。")
+    elif count <= 4:
+        continue
+    else:
+        print("正解は",selected_word,"でした。残念。")
